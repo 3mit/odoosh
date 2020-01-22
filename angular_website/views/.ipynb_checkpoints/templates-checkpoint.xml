@@ -1,15 +1,19 @@
 <odoo>
     <data>
-
-        <template id="listing">
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Landing Module">
             <xpath expr="." position="inside">
-<!--                 <script ></script>
-                <link /> -->
+                  <base href="/" />
             </xpath>
         </template>
+        
         <template id="index" name="Landing Page">
-          <h1>Prueba1</h1>
+            <app-root></app-root>
+            <script src="/angular_website/static/src/js/runtime-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/runtime-es5.js" nomodule defer></script>
+            <script src="/angular_website/static/src/js/polyfills-es5.js" nomodule defer></script>
+            <script src="/angular_website/static/src/js/polyfills-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/main-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/main-es5.js" nomodule defer></script>
         </template>
-
     </data>
 </odoo>
