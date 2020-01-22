@@ -3,7 +3,7 @@ from odoo import http
 
 
 class AngularWebsite(http.Controller):
-    @http.route('/inicio', auth='public', website=True)
+    @http.route('/', auth='public', website=True)
     def index(self, **kw):
         return "Hello, world"
 
