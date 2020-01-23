@@ -6,12 +6,10 @@
         </template>
         
         <template id="index" name="Landing Page">
-            <t t-call="website.layout">
                 <div id="app"></div>
                 <script type="text/javascript" src="/angular_website/static/src/js/bundle.js">
     <!--                 document.getElementById('app').innerHTML = 'Hello World'; -->
                 </script>
-            </t>
         </template>
     </data>
 </odoo>
