@@ -2,6 +2,7 @@
     <data>
         <template id="listing" name="Landing Module">
             <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/angular_website/static/src/css/main.css" />
             </xpath>
         </template>
         
