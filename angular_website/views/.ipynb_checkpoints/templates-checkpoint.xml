@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="listing" name="Landing Module" inherit_id="website.theme">
+        <template id="assets_backend" name="Landing Module" inherit_id="website.assets_backend">
             <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/angular_website/static/src/css/main.css" />
             </xpath>
