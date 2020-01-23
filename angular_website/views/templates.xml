@@ -8,12 +8,12 @@
         
         <template id="index" name="Landing Page">
             <app-root></app-root>
-            <script src="angular_website/static/src/js/runtime-es2015.js" type="module"></script>
-            <script src="angular_website/static/src/js/runtime-es5.js" nomodule defer></script>
-            <script src="angular_website/static/src/js/polyfills-es5.js" nomodule defer></script>
-            <script src="angular_website/static/src/js/polyfills-es2015.js" type="module"></script>
-            <script src="angular_website/static/src/js/main-es2015.js" type="module"></script>
-            <script src="angular_website/static/src/js/main-es5.js" nomodule defer></script>
+            <script src="/angular_website/static/src/js/runtime-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/runtime-es5.js" nomodule defer></script>
+            <script src="/angular_website/static/src/js/polyfills-es5.js" nomodule defer></script>
+            <script src="/angular_website/static/src/js/polyfills-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/main-es2015.js" type="module"></script>
+            <script src="/angular_website/static/src/js/main-es5.js" nomodule defer></script>
         </template>
     </data>
 </odoo>
