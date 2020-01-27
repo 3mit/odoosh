@@ -4,7 +4,7 @@
             <xpath expr="." position="inside">
             </xpath>
         </template> -->
-        <template id="index" name="Landing Module">
+        <template id="assets_frontend" inherit_id="web.assets_frontend" name="Landing Module">
             <xpath expr="link[last()]" position="after">
                 <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/main.css" />
             </xpath>
