@@ -1,20 +1,19 @@
 <odoo>
     <data>
-<!--         <template id="listing" name="Landing Module">
+        <template id="listing" name="Landing Module">
             <xpath expr="." position="inside">
             </xpath>
-        </template> -->
-        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Landing Module">
+        </template>
+<!--         <template id="assets_frontend" inherit_id="website.assets_frontend" name="Landing Module">
             <xpath expr="link[last()]" position="after">
                 <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/main.css" />
             </xpath>
-        </template>
+        </template> -->
         
         <template id="index" name="Landing Page">
-            <h1>Prueba Rojo</h1>
-<!--                 <div id="app"></div>
+                <div id="app"></div>
                 <script type="text/javascript" src="/angular_website/static/src/js/bundle.js">
-                </script> -->
+                </script>
         </template>
     </data>
 </odoo>
