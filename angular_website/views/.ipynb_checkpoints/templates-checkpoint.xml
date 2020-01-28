@@ -2,7 +2,7 @@
     <data>
         <template id="listing" name="Landing Module">
             <xpath expr="." position="inside">
-                <base href="./" />
+<!--                 <base href="./" /> -->
             </xpath>
         </template>
 <!--         <template id="assets_frontend" inherit_id="website.assets_frontend" name="Landing Module">
@@ -12,14 +12,15 @@
         </template> -->
         
         <template id="index" name="Landing Page">
-<!--                 <div id="app"></div> -->
-            <app-root></app-root>
-            <script type="text/javascript" src="/angular_website/static/src/js/main-es5.js"></script>
+                <div id="app"></div>
+                <script type="text/javascript" src="/angular_website/views/js/app.4fc2ac82377b1ea60ec2.js"></script>
+<!--             <app-root></app-root> -->
+<!--             <script type="text/javascript" src="/angular_website/static/src/js/main-es5.js"></script>
             <script type="text/javascript" src="/angular_website/static/src/js/main-es2015.js"></script>
             <script type="text/javascript" src="/angular_website/static/src/js/polyfills-es5.js"></script>
             <script type="text/javascript" src="/angular_website/static/src/js/polyfills-es2015.js"></script>
             <script type="text/javascript" src="/angular_website/static/src/js/runtime-es5.js"></script>
-            <script type="text/javascript" src="/angular_website/static/src/js/runtime-es2015.js"></script>
+            <script type="text/javascript" src="/angular_website/static/src/js/runtime-es2015.js"></script> -->
         </template>
     </data>
 </odoo>
