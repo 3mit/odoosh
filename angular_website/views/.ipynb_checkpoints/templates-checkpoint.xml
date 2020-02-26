@@ -13,7 +13,7 @@
         
         <template id="index" name="Landing Page">
                 <div id="app"></div>
-                <script type="text/javascript" src="/angular_website/static/src/js/app1.js"></script>
+                <script type="text/javascript" src="/angular_website/static/src/js/app2.js"></script>
                 <!-- Hotjar Tracking Code for www.3mit.dev -->
                 <script>
                     (function(h,o,t,j,a,r){
