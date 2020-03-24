@@ -4,6 +4,7 @@
             <xpath expr="." position="inside">
                 <!-- <base href="./" /> -->
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app.css" />
             </xpath>
         </template>
         
@@ -16,7 +17,7 @@
         
         <template id="index" name="Landing Page">
                 <div id="app"></div>
-                <script type="text/javascript" src="/angular_website/static/src/js/app.js"></script>
+                <script type="text/javascript" src="/angular_website/static/src/js/app1.js"></script>
                 <!-- Hotjar Tracking Code for www.3mit.dev -->
                 <script>
                     (function(h,o,t,j,a,r){
