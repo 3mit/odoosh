@@ -32,5 +32,4 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'css'
 }
