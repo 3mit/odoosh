@@ -14,7 +14,7 @@
         <template id="index" name="Landing Page">
                 <xpath expr="." position="inside">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/main.css" />
+                    <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app.css" />
                 </xpath>
                 <div id="app"></div>
                 <script type="text/javascript" src="/angular_website/static/src/js/app1.js"></script>
