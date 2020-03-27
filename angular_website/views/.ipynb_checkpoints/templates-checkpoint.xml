@@ -2,19 +2,26 @@
     <data>
         <template id="listing" name="Landing Module">
             <xpath expr="." position="inside">
-<!--                 <base href="./" /> -->
+
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app.css" />
+
             </xpath>
         </template>
-<!--         <template id="assets_frontend" inherit_id="website.assets_frontend" name="Landing Module">
-            <xpath expr="link[last()]" position="after">
-                <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/main.css" />
-            </xpath>
+        
+
+<!--         <template id="index" inherit_id="website.assets_frontend" name="Landing Module">
+            
         </template> -->
         
         <template id="index" name="Landing Page">
+                <xpath expr="." position="inside">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app.css" />
+                </xpath>
                 <div id="app"></div>
                 <script type="text/javascript" src="/angular_website/static/src/js/app.js"></script>
-                <!-- Hotjar Tracking Code for www.3mit.dev  -->
+                <!-- Hotjar Tracking Code for www.3mit.dev -->
                 <script>
                     (function(h,o,t,j,a,r){
                         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
