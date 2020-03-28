@@ -16,7 +16,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #00bb2d;
+  background-color: #25d366;
   z-index: 100;
   /* right: 16px; */
   bottom: 16px;
@@ -105,14 +105,14 @@
   border: none;
   border-radius: 5px;
   background: none;
-  background-color: #00bb2d;
+  background-color: #25d366;
   text-decoration: none;
   color: white;
   font-size: 1.2em;
   transition: .3s;
 }
 .HEADER_Enlace:hover{
-  background-color: #00a526;
+  background-color: #00bb2d;
   /* border: 1px solid white; */
 }
 .HEADER_Img {
@@ -121,12 +121,17 @@
 }
 
 @media only screen and (max-width: 1224px){
+  .HEADER_Header.width {
+    width: 1024px;
+  }
+}
+@media only screen and (max-width: 768px){
   .HEADER_Enlace {
     display: none;
   }
 }
 
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 1024px){
   .HEADER_Container{
     height: 80px;
     position: absolute;
@@ -293,7 +298,7 @@
     font-size: 3.5em;
   }
   .CTA_Parrafo {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .CTA_Form {
     display: block;
@@ -312,7 +317,7 @@
     font-size: 3.2em;
   }
     .CTA_Title {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 @media only screen and (max-width: 376px){
@@ -391,6 +396,8 @@
 @media only screen and (max-width: 1024px) {
   .POD_Titulo {
     font-size: 1.5em;
+    width: 100%;
+    text-align: center;
   }
   .POD_Container {
     flex-direction: column-reverse;
@@ -400,10 +407,17 @@
     margin-top: 5em;
   }
   .POD_InfoTitle {
-    font-size: 1.3em;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .POD_InfoDescription{
+    width: 100%;
+    text-align: justify;
   }
   .POD_Img {
-    width: 90%;
+    width: 100%;
+    text-align: center;
     margin: auto;
   }
 }
@@ -569,7 +583,7 @@
     margin: auto;
   }
   .INTEGRATION_SectionTitle {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 1em auto;
   }
   .INTEGRATION_CardsContainer {
@@ -809,7 +823,7 @@
     height: auto;
   }
   .SP2_Img {
-    margin-bottom: 2em;
+    margin: 2em auto;
   }
 }
 :root {
@@ -879,7 +893,7 @@
 }
 .EBOOK_Description {
   text-align: left;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0;
   margin-bottom: 1em;
   color: #EAEAEA;
@@ -967,7 +981,7 @@
     text-align: center;
   }
   .EBOOK_Description {
-    font-size: .8em;
+    font-size: 1.2em;
     text-align: justify;
     margin-bottom: 2em;
   }
@@ -1081,7 +1095,7 @@
 @media only screen and (max-width: 667px){
   .FOOTER_Footer {
     display: block;
-    height: 85vh;
+    height: 850px;
   }
   .FOOTER_FirstBox {
     width: 100%;

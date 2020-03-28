@@ -14,10 +14,10 @@
         <template id="index" name="Landing Page">
                 <xpath expr="." position="inside">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app2.css" />
+                    <link rel="stylesheet" type="text/css" href="/angular_website/static/src/css/app.css" />
                 </xpath>
                 <div id="app"></div>
-                <script type="text/javascript" src="/angular_website/static/src/js/app2.js"></script>
+                <script type="text/javascript" src="/angular_website/static/src/js/app.js"></script>
                 <!-- Hotjar Tracking Code for www.3mit.dev -->
                 <script>
                     (function(h,o,t,j,a,r){
