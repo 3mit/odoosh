@@ -90,7 +90,18 @@ class ReportInvoiceCliente(models.AbstractModel):
                 'precio_unitario': ' ',
                 'precio_total': ' ',
             })
-
+        if var.env.company and var.env.company.street :
+            street = str(var.env.company.street) +','
+        else:
+            street = ' '
+        if var.env.company and var.env.company.zip:
+            zip_code = str(var.env.company.zip) + ','
+        else:
+            zip_code = ' '
+        if var.env.company and var.env.company.city:
+            city = str(var.env.company.city) + ','
+        else:
+            city = ' '
         return {
             'data': var,
             'model': self.env['report.reporte_factura_grupo_rocar.template_cliente'],
@@ -105,6 +116,9 @@ class ReportInvoiceCliente(models.AbstractModel):
             'monto_base_exento': self.formato_cifras(monto_base_exento),
             'cifra_total': self.numero_to_letras(var.amount_total),
             'company': var.env.company,
+            'street' : street,
+            'zip_code': zip_code,
+            'city': city,
             'origin_check': origen,
             'nota_cred': nota_cred,
             'origin_number': origin_number,
