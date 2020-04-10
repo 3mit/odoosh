@@ -32,8 +32,8 @@
                                         </td>
                                         <td style="width:70%; font-size: 14px;" class="text-right">
                                             <b><span t-field="o.name" /></b>,&amp;nbsp;<b>RIF.:&amp;nbsp;</b><span t-field="o.vat"/><br/>
-                                            <span t-field="o.street"/>,&amp;nbsp;<span t-field="o.street2"/><br/>
-                                            <span t-field="o.zip"/>,&amp;nbsp;<span t-field="o.city"/>,&amp;nbsp;<span t-field="o.country_id"/><br/>
+                                            <span t-esc="street"/>&amp;nbsp;<span t-field="o.street2"/><br/>
+                                            <span t-esc="zip_code"/>&amp;nbsp;<span t-esc="city"/>&amp;nbsp;<span t-field="o.country_id"/><br/>
                                             <b>TLF.:&amp;nbsp;</b><span t-field="o.phone"/>,&amp;nbsp;<b>EMAIL:&amp;nbsp;</b><span t-field="o.email"/>
                                         </td>
                                     </tr>
