@@ -5,7 +5,9 @@
 {
     "name": "Facturacion-validaciones y correcciones; números de control automaticos Clientes-Proveedores",
     "version": "1.0",
-    "author": "3mit",
+    'description': """
+    """,
+    "author": "Localizacion Venezolana",
     "license": "AGPL-3",
     "category": "facturacion",
     #"website": "",

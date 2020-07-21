@@ -36,7 +36,7 @@ class AccountMove(models.Model):
         states={'draft': [('readonly', False)]},
         help="Fecha administrativa, generalmente es la fecha impresa en "
              "factura, esta fecha se utiliza para mostrar en la compra fiscal"
-             " libro", select=True)
+             " libro", index=True)
     invoice_date = fields.Date(string='Invoice/Bill Date', readonly=True, index=True, copy=False,
                                states={'draft': [('readonly', False)]},
                                default=_get_default_invoice_date)
@@ -111,32 +111,32 @@ class AccountMove(models.Model):
         return res
 
 
-    @api.returns('self', lambda value: value.id)
-    def copy(self, default=None):
-        """ Allows you to duplicate a record,
-        child_ids, nro_ctrl and reference fields are
-        cleaned, because they must be unique
-        """
-        # NOTE: Use argument name ids instead of id for fix the pylint error
-        # W0621 Redefining buil-in 'id'
-        if default is None:
-            default = {}
-        default = default.copy()
-        default.update({
-            'nro_ctrl': None,
-            'supplier_invoice_number': None,
-            'sin_cred': False,
-            # No cleaned in this copy because it is related to the previous
-            # document, if previous document says so this too
-            'date_document': False,
-            'invoice_printer': '',
-            'fiscal_printer': '',
-            # No cleaned in this copy because it is related to the previous
-            # document, if previous document says so this too
-            # loc_req':False,
-            'z_report': '',
-        })
-        return super(AccountMove, self).copy(default)
+    # @api.returns('self', lambda value: value.id)
+    # def copy(self, default=None):
+    #     """ Allows you to duplicate a record,
+    #     child_ids, nro_ctrl and reference fields are
+    #     cleaned, because they must be unique
+    #     """
+    #     # NOTE: Use argument name ids instead of id for fix the pylint error
+    #     # W0621 Redefining buil-in 'id'
+    #     if default is None:
+    #         default = {}
+    #     default = default.copy()
+    #     default.update({
+    #         'nro_ctrl': None,
+    #         'supplier_invoice_number': None,
+    #         'sin_cred': False,
+    #         # No cleaned in this copy because it is related to the previous
+    #         # document, if previous document says so this too
+    #         'date_document': False,
+    #         'invoice_printer': '',
+    #         'fiscal_printer': '',
+    #         # No cleaned in this copy because it is related to the previous
+    #         # document, if previous document says so this too
+    #         # loc_req':False,
+    #         'z_report': '',
+    #     })
+    #     return super(AccountMove, self).copy(default)
 
     #validacion de Fecha
         # validacion de fecha

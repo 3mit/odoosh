@@ -3,7 +3,9 @@
 {
     "name": "RIF Company-Respartner Validaciones y agregación de campos sobre la compañia",
     "version": "1.0",
-    "author": "Maria Carreño",
+    'description': """
+    """,
+    "author": "Localizacion Venezolana",
     'depends' : [
                  "base","base_vat","3mit_validation_res_partner"],
     "data": [

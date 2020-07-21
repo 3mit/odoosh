@@ -33,7 +33,7 @@
 
                 <xpath expr="//page[@name='other_info']/group/group[3]" position="after">
                     <group>
-                     <separator string="Fiscal Information"/>
+                     <separator string="Informacion fiscal"/>
                         <field name="sin_cred"/>
                         <field name="loc_req" invisible="1"/>
                         <field name="invoice_printer" attrs="{'invisible':[('loc_req','=',True)]}"/>

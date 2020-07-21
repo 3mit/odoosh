@@ -5,11 +5,13 @@
 {
     "name": "Localizacion Grupo",
     "version": "1.0",
-    "author": "3mit",
+    'description': """
+    """,
+    "author": "Localizacion Venezolana",
     "license": "AGPL-3",
     "category": "grupos",
     #"website": "",
-    "colaborador":"Yorman Pineda",
+    "colaborador":"Maria Carreno",
     'depends': ['base'],
 
     'demo': [

@@ -12,13 +12,12 @@ class WizNroctrl(models.TransientModel):
 
 
 
-    def set_noctrl(self,context):
+    def set_noctrl(self):
         """ Change control number of the invoice
         """
         account_move = self.env['account.move'].search([])
 
-        if context is None:
-            context = {}
+
         if not self.sure:
             raise exceptions.except_orm(
                 _("Error!"),
@@ -31,7 +30,7 @@ class WizNroctrl(models.TransientModel):
                 raise exceptions.except_orm(
                     _("Error!"),
                     _("El Numero de Control ya Existe"))
-        active_ids = context.get('active_ids', [])
+        active_ids = self._context.get('active_ids', [])
         inv_obj.browse(active_ids).write({'nro_ctrl': n_ctrl})
         return {}
 

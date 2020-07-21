@@ -1,10 +1,12 @@
 # -*- coding: UTF-8 -*-
 
 {
-    "name": "Validaciones y agregación de campos sobre el partner",
+    "name": "Validaciones y agregación de campos sobre el partner cliente-proveedor",
     "version": "1.0",
-    "author": "Maria Carreño",
-    'depends' : [#"hr",
+    'description': """
+    """,
+    "author": "Localizacion Venezolana",
+    'depends' : [
                  "base","base_vat"],
     "data": [
         'security/ir.model.access.csv',
