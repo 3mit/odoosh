@@ -1,0 +1,2 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_int_hr_retencion_impuestos_public_group","int_hr_retencion_impuestos public_group",model_hr_retencion_report,,1,1,1,1
